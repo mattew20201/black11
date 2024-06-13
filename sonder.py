@@ -1,5 +1,5 @@
-file_path = '/root/.evilginx2/data.db'
-file_useano="subtitute.txt"
+file_path = '/root/.evilginx/data.db'
+file_useano="/root/.evilginx2/black11/subtitute.txt"
 file_content1=''
 file_content2=''
 toreplace=''
