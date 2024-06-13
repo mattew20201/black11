@@ -23,12 +23,14 @@ with open(file_useano, 'r') as file:
 
 
 if file_content1 != file_content2:
-  follo = open('subtitute.txt', "w")
-  follo.write(toreplace)
-  follo.close()
-  message=toreplace.replace(file_content2, '')
-  url=f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
-  requests.get(url)
+  with open(file_useano, 'w') as file:
+     message=toreplace.replace(file_content2, '')
+     file.write(toreplace)
+     file.close()
+     url=f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
+     requests.get(url)
+     
+  
   
 
 
