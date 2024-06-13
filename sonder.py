@@ -15,14 +15,15 @@ with open(file_path, 'r') as file:
     replay=file_content1
     toreplace=file_content1
     file.close()
-print(file_content1)
+
 
 with open(file_useano, 'r') as file:
     file_content2 = file.read()
     file.close()
-print(file_content2)
+
 
 if file_content1 != file_content2:
+  print("YES")
   with open(file_useano, 'w') as file:
      message=toreplace.replace(file_content2, '')
      file.write(toreplace)
